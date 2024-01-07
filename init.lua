@@ -14,3 +14,4 @@ require('nvim')
 -- Setup
 
 require('setup.line-setup')
+require('setup.neo-tree-setup')
