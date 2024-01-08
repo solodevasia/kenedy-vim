@@ -7,13 +7,14 @@
 
 local cmd = vim.cmd
 local packer = require('packer')
+packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
 colorscheme matrix
 ]]
 
-return packer.startup(function(use)
+return packer.startup({function(use)
   -- colorscheme
   use 'iruzo/matrix-nvim'
   -- line
@@ -29,4 +30,10 @@ return packer.startup(function(use)
     branch = 'v3.x',
     requires = {'nvim-lua/plenary.nvim','nvim-tree/nvim-web-devicons','MunifTanjim/nui.nvim'}
   }
-end)
+  -- screen
+  use {
+    'anuvyklack/windows.nvim',
+    requires = {'anuvyklack/middleclass','anuvyklack/animation.nvim','nvimdev/dashboard-nvim'}
+  }
+end
+})

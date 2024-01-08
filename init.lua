@@ -15,3 +15,6 @@ require('nvim')
 
 require('setup.line-setup')
 require('setup.neo-tree-setup')
+require('setup.window-setup')
+require('setup.dashboard-setup')
+
