@@ -30,5 +30,17 @@
   "omnisharp.trace.server": "information",
   "omnisharp.debug.server": true,
   "astro.disableResolveCompletionItem": true,
-  "Lua.diagnostics.globals": ["vim"]
+  "Lua.diagnostics.globals": ["vim"],
+  "coc.github.enable": {
+    "type": "boolean",
+    "default": true
+  },
+  "coc.github.priority": {
+    "type": "number",
+    "default": 99
+  },
+  "coc.github.filetypes": {
+    "type": "array",
+    "default": ["gitcommit"]
+  }
 }

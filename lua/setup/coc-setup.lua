@@ -29,10 +29,14 @@ vim.g.coc_global_extensions = {
   '@yaegassy/coc-typescript-vue-plugin',
   '@yaegassy/coc-astro',
   '@yaegassy/coc-marksman',
-  'coc-lua'
+  'coc-lua',
+  'coc-github',
+  'coc-eslint',
+  'coc-yaml',
+  'coc-java'
 }
 
-vim.cmd[[
+vim.cmd [[
 " CSS
 autocmd FileType scss setl iskeyword+=@-@
 " Tailwind

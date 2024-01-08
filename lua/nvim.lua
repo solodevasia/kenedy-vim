@@ -22,7 +22,8 @@ return packer.startup({ function(use)
   use {
     'nvim-lualine/lualine.nvim',
     requires = {
-      'nvim-tree/nvim-web-devicons'
+      'nvim-tree/nvim-web-devicons',
+      'folke/todo-comments.nvim'
     }
   }
   -- sidebar
@@ -39,7 +40,8 @@ return packer.startup({ function(use)
       'anuvyklack/animation.nvim',
       'nvimdev/dashboard-nvim',
       'psliwka/vim-smoothie',
-      'voldikss/vim-floaterm'
+      'voldikss/vim-floaterm',
+      'mg979/vim-visual-multi'
     }
   }
   -- language
