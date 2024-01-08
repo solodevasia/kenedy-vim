@@ -23,3 +23,5 @@ require('setup.telescope-setup')
 require('setup.lspconfig-setup')
 
 vim.g.python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
+
+vim.api.nvim_set_keymap('n', '<space>t', '<Cmd>FloatermToggle<CR>', { noremap = true, silent = true })

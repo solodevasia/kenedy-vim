@@ -29,5 +29,6 @@
   },
   "omnisharp.trace.server": "information",
   "omnisharp.debug.server": true,
-  "astro.disableResolveCompletionItem": true
+  "astro.disableResolveCompletionItem": true,
+  "Lua.diagnostics.globals": ["vim"]
 }

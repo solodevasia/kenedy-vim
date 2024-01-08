@@ -34,7 +34,13 @@ return packer.startup({ function(use)
   -- screen
   use {
     'anuvyklack/windows.nvim',
-    requires = { 'anuvyklack/middleclass', 'anuvyklack/animation.nvim', 'nvimdev/dashboard-nvim', 'psliwka/vim-smoothie' }
+    requires = {
+      'anuvyklack/middleclass',
+      'anuvyklack/animation.nvim',
+      'nvimdev/dashboard-nvim',
+      'psliwka/vim-smoothie',
+      'voldikss/vim-floaterm'
+    }
   }
   -- language
   use 'neoclide/coc.nvim'

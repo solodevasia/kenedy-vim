@@ -7,10 +7,10 @@
 
 require('telescope').setup({
   defaults = {
-    layout_config = { 
-      vertical = { width = 0.80 } 
+    layout_config = {
+      vertical = { width = 0.80 }
     }
   }
 })
 
-vim.api.nvim_set_keymap('n','<space>f','<Cmd>Telescope find_files<CR>',{noremap=true,silent=true})
+vim.api.nvim_set_keymap('n', '<space>f', '<Cmd>Telescope find_files<CR>', { noremap = true, silent = true })
