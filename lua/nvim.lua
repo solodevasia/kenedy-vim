@@ -50,5 +50,16 @@ return packer.startup({ function(use)
   use 'https://github.com/tpope/vim-commentary'
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
+  use 'metakirby5/codi.vim'
+  -- AI
+  use {
+    'jackMort/ChatGPT.nvim',
+    event = 'VeryLazy',
+    config = function()
+      require('chatgpt').setup({
+
+      })
+    end
+  }
 end
 })
