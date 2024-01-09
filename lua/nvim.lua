@@ -40,26 +40,21 @@ return packer.startup({ function(use)
       'anuvyklack/animation.nvim',
       'nvimdev/dashboard-nvim',
       'psliwka/vim-smoothie',
-      'voldikss/vim-floaterm',
-      'mg979/vim-visual-multi'
+      'voldikss/vim-floaterm'
     }
   }
   -- language
-  use 'neoclide/coc.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'neoclide/coc.nvim',
+    branch = 'release'
+  } 
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    requires = {'https://github.com/neovim/tree-sitter-vimdoc'}
+  }
   use 'https://github.com/tpope/vim-commentary'
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
   use 'metakirby5/codi.vim'
-  -- AI
-  use {
-    'jackMort/ChatGPT.nvim',
-    event = 'VeryLazy',
-    config = function()
-      require('chatgpt').setup({
-
-      })
-    end
-  }
 end
 })
