@@ -48,42 +48,19 @@ return packer.startup({ function(use)
       'psliwka/vim-smoothie',
       'voldikss/vim-floaterm',
       'terryma/vim-multiple-cursors',
-      'gsuuon/note.nvim'
+      'gsuuon/note.nvim',
+      'akinsho/toggleterm.nvim'
     }
-  }
-  use {
-    'rcarriga/nvim-notify',
-    config = function()
-      local async = require('plenary.async')
-      local notify = require('notify').async
-      async.run(function()
-        notify("Let's wait for this to close").events.close()
-        notify('It closed!')
-      end)
-    end
   }
   -- language
   use {
     'neoclide/coc.nvim',
-    branch = 'release',
-    requires = {
-      'https://github.com/L3MON4D3/LuaSnip'
-    }
+    branch = 'release'
   }
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    requires = { 'https://github.com/neovim/tree-sitter-vimdoc' }
-  }
+  use 'nvim-treesitter/nvim-treesitter'
   use 'https://github.com/tpope/vim-commentary'
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
   use 'metakirby5/codi.vim'
-  use 'topaxi/gh-actions.nvim'
-  use {
-    'rest-nvim/rest.nvim',
-    config = function(options)
-      options.ensure_installed = { 'http', 'json' }
-    end
-  }
 end
 })

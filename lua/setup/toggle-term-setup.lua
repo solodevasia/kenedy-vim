@@ -5,6 +5,8 @@
 -- License : Open Source
 -- ============================--=============================
 
-require('gh-actions').setup({
-  browser = 'chrome'
+require('toggleterm').setup({
+  direction = 'vertical',
+  size = 60,
+  auto_scroll = true
 })
