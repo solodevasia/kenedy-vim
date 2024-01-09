@@ -48,6 +48,7 @@ return packer.startup({ function(use)
       'psliwka/vim-smoothie',
       'voldikss/vim-floaterm',
       'terryma/vim-multiple-cursors',
+      'gsuuon/note.nvim'
     }
   }
   use {
