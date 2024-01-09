@@ -11,19 +11,13 @@ packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
-colorscheme noctis
+colorscheme farin
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
 return packer.startup({ function(use)
   -- colorscheme
-  use { 'iruzo/matrix-nvim',
-    requires = {
-      'https://github.com/ninja/sky',
-      'kartikp10/noctis.nvim',
-      'rktjmp/lush.nvim'
-    }
-  }
+  use 'https://github.com/mlopes/vim-farin'
   -- line
   use {
     'nvim-lualine/lualine.nvim',
@@ -61,6 +55,5 @@ return packer.startup({ function(use)
   use 'https://github.com/tpope/vim-commentary'
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
-  use 'metakirby5/codi.vim'
 end
 })
