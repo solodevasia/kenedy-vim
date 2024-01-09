@@ -11,7 +11,7 @@ packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
-colorscheme sky
+colorscheme matrix
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
@@ -73,6 +73,7 @@ return packer.startup({ function(use)
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
   use 'metakirby5/codi.vim'
+  use 'topaxi/gh-actions.nvim'
   use {
     'rest-nvim/rest.nvim',
     config = function(options)

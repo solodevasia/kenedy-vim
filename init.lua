@@ -21,6 +21,7 @@ require('setup.coc-setup')
 require('setup.treesitter-setup')
 require('setup.telescope-setup')
 require('setup.lspconfig-setup')
+require('setup.git-action-setup')
 
 vim.g.python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
 
