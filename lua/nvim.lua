@@ -11,14 +11,18 @@ packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
-colorscheme matrix
+colorscheme noctis
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
 return packer.startup({ function(use)
   -- colorscheme
   use { 'iruzo/matrix-nvim',
-    requires = { 'https://github.com/ninja/sky' }
+    requires = {
+      'https://github.com/ninja/sky',
+      'kartikp10/noctis.nvim',
+      'rktjmp/lush.nvim'
+    }
   }
   -- line
   use {
