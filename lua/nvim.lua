@@ -40,21 +40,31 @@ return packer.startup({ function(use)
       'anuvyklack/animation.nvim',
       'nvimdev/dashboard-nvim',
       'psliwka/vim-smoothie',
-      'voldikss/vim-floaterm'
+      'voldikss/vim-floaterm',
+      'terryma/vim-multiple-cursors'
     }
   }
   -- language
   use {
     'neoclide/coc.nvim',
-    branch = 'release'
-  } 
+    branch = 'release',
+    requires = {
+      'https://github.com/L3MON4D3/LuaSnip'
+    }
+  }
   use {
     'nvim-treesitter/nvim-treesitter',
-    requires = {'https://github.com/neovim/tree-sitter-vimdoc'}
+    requires = { 'https://github.com/neovim/tree-sitter-vimdoc' }
   }
   use 'https://github.com/tpope/vim-commentary'
   use 'kdheepak/lazygit.nvim'
   use 'https://github.com/neovim/nvim-lspconfig'
   use 'metakirby5/codi.vim'
+  use {
+    'rest-nvim/rest.nvim',
+    config = function(options)
+      options.ensure_installed = { 'http', 'json' }
+    end
+  }
 end
 })
