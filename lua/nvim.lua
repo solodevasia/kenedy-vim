@@ -11,13 +11,15 @@ packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
-colorscheme matrix
+colorscheme sky
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
 return packer.startup({ function(use)
   -- colorscheme
-  use 'iruzo/matrix-nvim'
+  use { 'iruzo/matrix-nvim',
+    requires = { 'https://github.com/ninja/sky' }
+  }
   -- line
   use {
     'nvim-lualine/lualine.nvim',
@@ -41,8 +43,19 @@ return packer.startup({ function(use)
       'nvimdev/dashboard-nvim',
       'psliwka/vim-smoothie',
       'voldikss/vim-floaterm',
-      'terryma/vim-multiple-cursors'
+      'terryma/vim-multiple-cursors',
     }
+  }
+  use {
+    'rcarriga/nvim-notify',
+    config = function()
+      local async = require('plenary.async')
+      local notify = require('notify').async
+      async.run(function()
+        notify("Let's wait for this to close").events.close()
+        notify('It closed!')
+      end)
+    end
   }
   -- language
   use {
