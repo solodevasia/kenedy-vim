@@ -26,6 +26,7 @@ return packer.startup({ function(use)
     'nvim-lualine/lualine.nvim',
     requires = {
       'nvim-tree/nvim-web-devicons',
+      'ryanoasis/vim-devicons',
       'folke/todo-comments.nvim'
     }
   }
