@@ -7,17 +7,20 @@
 
 local cmd = vim.cmd
 local packer = require('packer')
-packer.util = require('packer.util')
 
 cmd [[
 packadd packer.nvim
-colorscheme farin
+colorscheme miasma
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
 return packer.startup({ function(use)
   -- colorscheme
-  use 'https://github.com/mlopes/vim-farin'
+  use {
+    "xero/miasma.nvim",
+    lazy = false,
+    priority = 1000,
+  }
   -- line
   use {
     'nvim-lualine/lualine.nvim',
@@ -30,7 +33,7 @@ return packer.startup({ function(use)
   use {
     'nvim-neo-tree/neo-tree.nvim',
     branch = 'v3.x',
-    requires = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons', 'MunifTanjim/nui.nvim', 'nvim-telescope/telescope.nvim' }
+    requires = { 'nvim-lua/plenary.nvim', 'MunifTanjim/nui.nvim', 'nvim-telescope/telescope.nvim' }
   }
   -- screen
   use {
