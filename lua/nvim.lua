@@ -10,17 +10,14 @@ local packer = require('packer')
 
 cmd [[
 packadd packer.nvim
-colorscheme miasma
+colorscheme thematrix
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
 return packer.startup({ function(use)
   -- colorscheme
-  use {
-    "xero/miasma.nvim",
-    lazy = false,
-    priority = 1000,
-  }
+  use 'https://github.com/luisiacc/the-matrix.nvim'
+
   -- line
   use {
     'nvim-lualine/lualine.nvim',
