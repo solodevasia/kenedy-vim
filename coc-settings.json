@@ -1,6 +1,6 @@
 {
   "coc.preferences.formatOnSave": true,
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "tsserver.enable": true,
   "docker.enable": true,
   "html-css-support.styleSheets": [
