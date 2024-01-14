@@ -5,9 +5,9 @@
 -- License : Open Source
 -- ============================--=============================
 
-local o = vim.o
-local wo = vim.wo
-local opt = vim.opt
+local o          = vim.o
+local wo         = vim.wo
+local opt        = vim.opt
 
 o.number         = true
 o.relativenumber = true
@@ -47,7 +47,10 @@ opt.mouse        = 'a'
 o.mapleader      = " "
 o.maplocalleader = " "
 
-vim.cmd[[
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+vim.cmd [[
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 ]]
