@@ -11,7 +11,7 @@ local packer = require('packer')
 
 cmd [[
 packadd packer.nvim
-colorscheme pop-punk
+colorscheme thematrix
 autocmd FileType apache setlocal commentstring=#\ %s
 ]]
 
@@ -20,7 +20,10 @@ return packer.startup({ function(use)
   use {
     'https://github.com/luisiacc/the-matrix.nvim',
     requires = {
-      'bignimbus/pop-punk.vim'
+      'bignimbus/pop-punk.vim',
+      'https://github.com/morhetz/gruvbox',
+      'arzg/vim-colors-xcode',
+      'https://github.com/dunstontc/vim-vscode-theme'
     }
   }
 
