@@ -6,7 +6,7 @@
 -- ============================--=============================
 
 require('lualine').setup({
-  theme = 'auto',
+  theme = 'cyberdream',
   icons_enabled = true,
   sections = {
     lualine_a = {
