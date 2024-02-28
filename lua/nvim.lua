@@ -20,7 +20,11 @@ return packer.startup({ function(use)
     'scottmckendry/cyberdream.nvim',
     requires = {
       'https://github.com/luisiacc/the-matrix.nvim',
-      'yasukotelin/shirotelin'
+      'yasukotelin/shirotelin',
+      'ellisonleao/gruvbox.nvim',
+      'Mofiqul/vscode.nvim',
+      'https://github.com/chiendo97/intellij.vim',
+      'https://github.com/Skullamortis/forest.nvim'
     }
   }
 
