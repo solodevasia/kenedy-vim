@@ -19,12 +19,7 @@ return packer.startup({ function(use)
   use {
     'scottmckendry/cyberdream.nvim',
     requires = {
-      'https://github.com/luisiacc/the-matrix.nvim',
-      'yasukotelin/shirotelin',
-      'ellisonleao/gruvbox.nvim',
-      'Mofiqul/vscode.nvim',
-      'https://github.com/chiendo97/intellij.vim',
-      'https://github.com/Skullamortis/forest.nvim'
+      'https://github.com/lunacookies/vim-colors-xcode'
     }
   }
 

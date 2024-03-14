@@ -30,7 +30,7 @@ vim.api.nvim_set_keymap('n', '<space>t', '<Cmd>FloatermToggle<CR>', { noremap = 
 vim.api.nvim_set_keymap('n', '<space>y', '<Cmd>ToggleTerm<CR>', { noremap = true, silent = true })
 
 vim.cmd([[
-  colorscheme forest-serene
+  colorscheme xcodedarkhc
   highlight Cursor guifg=white guibg=white
   highlight iCursor guifg=white guibg=steelblue
   set guicursor=n-v-c:block-Cursor
