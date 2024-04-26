@@ -33,7 +33,8 @@ vim.g.coc_global_extensions = {
   'coc-github',
   'coc-eslint',
   'coc-yaml',
-  'coc-java'
+  'coc-java',
+  'coc-xml'
 }
 
 vim.cmd [[

@@ -1,5 +1,7 @@
 {
+  "xml.java.home": "/Users/mco/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home",
   "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnType": true,
   "prettier.singleQuote": false,
   "tsserver.enable": true,
   "docker.enable": true,
@@ -42,5 +44,6 @@
   "coc.github.filetypes": {
     "type": "array",
     "default": ["gitcommit"]
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }

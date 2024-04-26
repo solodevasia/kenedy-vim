@@ -19,7 +19,7 @@ return packer.startup({ function(use)
   use {
     'scottmckendry/cyberdream.nvim',
     requires = {
-      'https://github.com/lunacookies/vim-colors-xcode'
+      'https://github.com/luisiacc/the-matrix.nvim'
     }
   }
 
@@ -52,6 +52,13 @@ return packer.startup({ function(use)
       'akinsho/toggleterm.nvim'
     }
   }
+
+  -- Gitlens
+
+  use {
+    'https://github.com/APZelos/blamer.nvim'
+  }
+
   -- language
   use {
     'neoclide/coc.nvim',

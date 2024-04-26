@@ -29,8 +29,8 @@ vim.g.python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.12/bi
 vim.api.nvim_set_keymap('n', '<space>t', '<Cmd>FloatermToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<space>y', '<Cmd>ToggleTerm<CR>', { noremap = true, silent = true })
 
+vim.g.blamer_enabled = true
 vim.cmd([[
-  colorscheme xcodedarkhc
   highlight Cursor guifg=white guibg=white
   highlight iCursor guifg=white guibg=steelblue
   set guicursor=n-v-c:block-Cursor
