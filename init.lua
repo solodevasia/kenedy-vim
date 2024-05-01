@@ -31,6 +31,7 @@ vim.api.nvim_set_keymap('n', '<space>y', '<Cmd>ToggleTerm<CR>', { noremap = true
 
 vim.g.blamer_enabled = true
 vim.cmd([[
+  colorscheme redish
   highlight Cursor guifg=white guibg=white
   highlight iCursor guifg=white guibg=steelblue
   set guicursor=n-v-c:block-Cursor
