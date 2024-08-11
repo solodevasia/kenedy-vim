@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/mco/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/mco/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/Users/mco/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?/init.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?.lua;/Users/mco/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/mco/.cache/nvim/packer_hererocks/2.1.1710088188/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,10 +74,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["abyss.nvim"] = {
+    loaded = true,
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/abyss.nvim",
+    url = "https://github.com/barrientosvctor/abyss.nvim"
+  },
   ["animation.nvim"] = {
     loaded = true,
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/animation.nvim",
     url = "https://github.com/anuvyklack/animation.nvim"
+  },
+  ["blamer.nvim"] = {
+    loaded = true,
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/blamer.nvim",
+    url = "https://github.com/APZelos/blamer.nvim"
   },
   ["coc.nvim"] = {
     loaded = true,
@@ -94,10 +104,15 @@ _G.packer_plugins = {
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/nvimdev/dashboard-nvim"
   },
-  ["gruvbox.nvim"] = {
+  ["flow.nvim"] = {
     loaded = true,
-    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/flow.nvim",
+    url = "https://github.com/0xstepit/flow.nvim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["lazygit.nvim"] = {
     loaded = true,
@@ -129,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
+  nvim = {
+    loaded = true,
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/Everblush/nvim"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -149,10 +169,10 @@ _G.packer_plugins = {
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  shirotelin = {
+  ["redish.vim"] = {
     loaded = true,
-    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/shirotelin",
-    url = "https://github.com/yasukotelin/shirotelin"
+    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/redish.vim",
+    url = "https://github.com/aparaatti/redish.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -198,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mco/.local/share/nvim/site/pack/packer/start/vim-smoothie",
     url = "https://github.com/psliwka/vim-smoothie"
-  },
-  ["vscode.nvim"] = {
-    loaded = true,
-    path = "/Users/mco/.local/share/nvim/site/pack/packer/start/vscode.nvim",
-    url = "https://github.com/Mofiqul/vscode.nvim"
   },
   ["windows.nvim"] = {
     loaded = true,

@@ -23,6 +23,7 @@ require('setup.telescope-setup')
 require('setup.lspconfig-setup')
 require('setup.toggle-term-setup')
 require('setup.cyberdream')
+require('setup.session')
 
 vim.g.python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
 
@@ -31,7 +32,7 @@ vim.api.nvim_set_keymap('n', '<space>y', '<Cmd>ToggleTerm<CR>', { noremap = true
 
 vim.g.blamer_enabled = true
 vim.cmd([[
-  colorscheme redish
+  colorscheme abyss
   highlight Cursor guifg=white guibg=white
   highlight iCursor guifg=white guibg=steelblue
   set guicursor=n-v-c:block-Cursor

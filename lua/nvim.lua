@@ -22,7 +22,9 @@ return packer.startup({ function(use)
       'https://github.com/luisiacc/the-matrix.nvim',
       'https://github.com/barrientosvctor/abyss.nvim',
       'https://github.com/Everblush/nvim',
-      'https://github.com/aparaatti/redish.vim'
+      'https://github.com/aparaatti/redish.vim',
+      'https://github.com/morhetz/gruvbox',
+      'https://github.com/0xstepit/flow.nvim',
     }
   }
 
@@ -52,7 +54,8 @@ return packer.startup({ function(use)
       'voldikss/vim-floaterm',
       'terryma/vim-multiple-cursors',
       'gsuuon/note.nvim',
-      'akinsho/toggleterm.nvim'
+      'akinsho/toggleterm.nvim',
+      'https://github.com/natecraddock/sessions.nvim'
     }
   }
 

@@ -6,7 +6,7 @@
 -- ============================--=============================
 
 require('toggleterm').setup({
-  direction = 'vertical',
+  direction = 'horizontal',
   size = 60,
   auto_scroll = true
 })

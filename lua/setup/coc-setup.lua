@@ -34,7 +34,8 @@ vim.g.coc_global_extensions = {
   'coc-eslint',
   'coc-yaml',
   'coc-java',
-  'coc-xml'
+  'coc-xml',
+  'coc-python'
 }
 
 vim.cmd [[
